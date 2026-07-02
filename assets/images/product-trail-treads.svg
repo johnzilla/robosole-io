@@ -1,53 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Trail Treads all-terrain robot tread render">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Trail Tread — the RoboSole all-terrain boot base with deep aggressive lugs for humanoid robots">
   <defs>
-    <radialGradient id="t2bg" cx="50%" cy="42%" r="70%">
-      <stop offset="0" stop-color="#14120f"/>
-      <stop offset="1" stop-color="#070606"/>
-    </radialGradient>
-    <linearGradient id="t2body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#3a3f47"/>
-      <stop offset="1" stop-color="#14161a"/>
-    </linearGradient>
-    <linearGradient id="t2sole" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1a1c20"/>
-      <stop offset="1" stop-color="#090a0c"/>
-    </linearGradient>
-    <linearGradient id="t2spark" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#fb923c"/>
-      <stop offset="1" stop-color="#f97316"/>
-    </linearGradient>
-    <filter id="t2glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="6" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <radialGradient id="t2bg" cx="50%" cy="44%" r="70%"><stop offset="0" stop-color="#14120f"/><stop offset="1" stop-color="#070606"/></radialGradient>
+    <linearGradient id="t2metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3f47"/><stop offset="0.55" stop-color="#1a1d22"/><stop offset="1" stop-color="#0c0e11"/></linearGradient>
+    <linearGradient id="t2sole" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1c20"/><stop offset="1" stop-color="#090a0c"/></linearGradient>
+    <linearGradient id="t2spark" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fb923c"/><stop offset="1" stop-color="#f97316"/></linearGradient>
+    <filter id="t2glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
   <rect width="800" height="600" fill="url(#t2bg)"/>
-  <ellipse cx="400" cy="480" rx="280" ry="34" fill="#f97316" fill-opacity="0.10" filter="url(#t2glow)"/>
+  <g stroke="#f97316" stroke-opacity="0.06" stroke-width="1"><path d="M0 150H800M0 300H800M0 450H800M200 0V600M400 0V600M600 0V600"/></g>
+  <ellipse cx="410" cy="500" rx="280" ry="30" fill="#f97316" fill-opacity="0.1" filter="url(#t2glow)"/>
 
-  <!-- upper: rugged shell -->
-  <path d="M180 350 Q200 240 320 232 Q470 226 566 296 Q618 336 616 384 L616 398 L180 398 Z" fill="url(#t2body)" stroke="#4a515c" stroke-width="2"/>
-  <!-- armor plates -->
-  <g fill="#20242c" stroke="#4a515c" stroke-width="1.5">
-    <path d="M230 300 L300 288 L308 350 L236 356 Z"/>
-    <path d="M320 286 L400 282 L406 348 L326 350 Z"/>
-    <path d="M420 286 L500 300 L500 350 L424 348 Z"/>
-  </g>
-  <!-- torsion plate accent -->
-  <path d="M200 384 L610 380" stroke="url(#t2spark)" stroke-width="5" filter="url(#t2glow)"/>
-  <path d="M540 250 Q600 262 606 322" fill="none" stroke="#c0c4cc" stroke-width="3" opacity="0.7"/>
-
-  <!-- midsole -->
-  <path d="M168 398 L620 392 Q648 392 646 418 L640 446 Q636 456 616 456 L188 464 Q162 464 160 436 Z" fill="url(#t2sole)" stroke="#262b33" stroke-width="2"/>
-  <!-- DEEP aggressive lugs -->
-  <g fill="#101215" stroke="#31373f" stroke-width="1.6">
-    <path d="M185 452 l30 -6 l10 40 l-34 4 Z"/>
-    <path d="M240 449 l34 -5 l10 42 l-38 4 Z"/>
-    <path d="M300 447 l34 -4 l10 44 l-38 3 Z"/>
-    <path d="M360 446 l34 -3 l10 44 l-38 3 Z"/>
-    <path d="M420 446 l34 -1 l8 44 l-38 2 Z"/>
-    <path d="M480 447 l34 1 l6 42 l-38 1 Z"/>
-    <path d="M540 448 l30 2 l4 38 l-32 1 Z"/>
-    <path d="M594 448 l26 2 l2 32 l-28 1 Z"/>
-  </g>
-  <text x="400" y="548" text-anchor="middle" font-family="'Space Grotesk',system-ui,sans-serif" font-size="22" letter-spacing="6" fill="#7c828e">TRAIL TREADS</text>
+  <!-- rugged boot base body (taller, chunkier) -->
+  <path d="M196 464 C190 424 194 356 202 316 C206 282 226 268 262 266 L392 266 C476 272 556 296 612 334 C656 358 680 380 674 406 C670 424 650 434 628 440 L250 468 C222 468 202 460 196 464 Z" fill="url(#t2metal)" stroke="#4a515c" stroke-width="2"/>
+  <!-- armor plating on the shell of the base -->
+  <g fill="#20242c" stroke="#4a515c" stroke-width="1.6"><path d="M280 300 L360 292 L368 350 L288 356 Z"/><path d="M380 292 L470 302 L474 356 L384 352 Z"/><path d="M492 306 L560 330 L560 372 L494 360 Z"/></g>
+  <!-- torsion-plate accent -->
+  <path d="M210 422 L626 414" stroke="url(#t2spark)" stroke-width="5" filter="url(#t2glow)"/>
+  <!-- ankle-mount collar -->
+  <ellipse cx="334" cy="268" rx="70" ry="16" fill="#0b0d11" stroke="#3a414c" stroke-width="2"/>
+  <ellipse cx="334" cy="268" rx="55" ry="10" fill="none" stroke="url(#t2spark)" stroke-width="2" opacity="0.8"/>
+  <!-- toe roller -->
+  <circle cx="662" cy="410" r="12" fill="#0d0f13" stroke="url(#t2spark)" stroke-width="2"/>
+  <!-- outsole with DEEP aggressive lugs -->
+  <path d="M200 444 L640 436 Q664 436 662 454 L654 474 Q650 482 632 482 L220 486 Q196 486 196 466 Z" fill="url(#t2sole)" stroke="#262b33" stroke-width="2"/>
+  <g fill="#101215" stroke="#31373f" stroke-width="1.6"><path d="M206 460 l30 -4 l12 42 l-36 4 Z"/><path d="M258 458 l34 -4 l12 44 l-40 4 Z"/><path d="M316 456 l34 -3 l12 46 l-40 3 Z"/><path d="M376 456 l34 -2 l10 46 l-40 3 Z"/><path d="M436 456 l34 0 l8 44 l-40 2 Z"/><path d="M496 458 l32 2 l6 40 l-38 1 Z"/><path d="M552 460 l30 3 l4 34 l-34 1 Z"/></g>
+  <text x="400" y="556" text-anchor="middle" font-family="'Space Grotesk',system-ui,sans-serif" font-size="21" letter-spacing="5" fill="#7c828e">TRAIL TREAD · ALL-TERRAIN</text>
 </svg>
