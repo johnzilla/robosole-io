@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-label="Exploded diagram: a stylish Shell snaps down onto an engineered Tread base via the SnapLock connector, together forming a complete robot shoe">
+  <defs>
+    <radialGradient id="sysbg" cx="50%" cy="40%" r="72%"><stop offset="0" stop-color="#0e161a"/><stop offset="1" stop-color="#060809"/></radialGradient>
+    <linearGradient id="sysShell" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#67e8f9"/><stop offset="0.5" stop-color="#22d3ee"/><stop offset="1" stop-color="#0891b2"/></linearGradient>
+    <linearGradient id="sysTread" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b303a"/><stop offset="1" stop-color="#0c0e12"/></linearGradient>
+    <filter id="sysglow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="620" fill="url(#sysbg)"/>
+  <g stroke="#22d3ee" stroke-opacity="0.08" stroke-width="1"><path d="M0 155H800M0 310H800M0 465H800M200 0V620M400 0V620M600 0V620"/></g>
+
+  <!-- SHELL (top, floating) -->
+  <g filter="url(#sysglow)">
+    <path d="M180 250 C180 158 236 110 344 104 C470 97 556 134 598 190 C614 214 610 242 588 250 Z" fill="url(#sysShell)" stroke="#a5f3fc" stroke-width="2"/>
+    <path d="M240 158 C320 124 430 124 512 158" fill="none" stroke="#ecfeff" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  </g>
+  <!-- shell connector pins pointing down -->
+  <g fill="#0e3a44" stroke="#0891b2" stroke-width="1.5"><rect x="250" y="250" width="34" height="22" rx="4"/><rect x="386" y="252" width="34" height="22" rx="4"/><rect x="512" y="250" width="34" height="22" rx="4"/></g>
+  <text x="640" y="180" font-family="'Space Grotesk',system-ui,sans-serif" font-size="26" font-weight="700" fill="#22d3ee">SHELL</text>
+  <text x="640" y="204" font-family="Inter,system-ui,sans-serif" font-size="14" fill="#7c828e">the style · snaps on</text>
+
+  <!-- SNAPLOCK zone + arrow -->
+  <g stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.9">
+    <path d="M384 300 v40 M400 300 v40 M416 300 v40" stroke-dasharray="4 5"/>
+  </g>
+  <path d="M400 344 l-14 -18 h9 v-16 h10 v16 h9 Z" fill="#22d3ee" filter="url(#sysglow)"/>
+  <text x="430" y="330" font-family="'Space Grotesk',system-ui,sans-serif" font-size="18" font-weight="600" fill="#c0c4cc" letter-spacing="2">SNAPLOCK™</text>
+
+  <!-- TREAD (bottom base) -->
+  <g>
+    <!-- sockets that receive the shell pins -->
+    <g fill="#0a0b0e" stroke="#0891b2" stroke-width="1.5" opacity="0.9"><rect x="250" y="372" width="34" height="16" rx="3"/><rect x="386" y="372" width="34" height="16" rx="3"/><rect x="512" y="372" width="34" height="16" rx="3"/></g>
+    <path d="M172 392 C172 372 196 388 250 388 L560 386 C600 386 616 392 612 410 L604 452 Q598 470 574 470 L200 476 C176 476 160 466 160 442 Z" fill="url(#sysTread)" stroke="#3a414c" stroke-width="2"/>
+    <path d="M186 430 L604 424" stroke="#22d3ee" stroke-width="3" opacity="0.8" filter="url(#sysglow)"/>
+    <!-- lugs -->
+    <g fill="#101215" stroke="#31373f" stroke-width="1.4"><rect x="196" y="462" width="44" height="22" rx="5"/><rect x="252" y="463" width="44" height="23" rx="5"/><rect x="308" y="464" width="44" height="24" rx="5"/><rect x="364" y="463" width="44" height="23" rx="5"/><rect x="420" y="462" width="44" height="22" rx="5"/><rect x="476" y="461" width="44" height="20" rx="5"/><rect x="532" y="460" width="40" height="18" rx="5"/></g>
+  </g>
+  <text x="640" y="420" font-family="'Space Grotesk',system-ui,sans-serif" font-size="26" font-weight="700" fill="#ffffff">TREAD</text>
+  <text x="640" y="444" font-family="Inter,system-ui,sans-serif" font-size="14" fill="#7c828e">the machine · stays on</text>
+
+  <text x="400" y="600" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="15" letter-spacing="3" fill="#7c828e">ONE TREAD · ENDLESS SHELLS · SWAP IN SECONDS</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Chrome Shell — a reflective metallic silver snap-on style top">
+  <defs>
+    <radialGradient id="shbg" cx="50%" cy="42%" r="70%"><stop offset="0" stop-color="#12151a"/><stop offset="1" stop-color="#070809"/></radialGradient>
+    <linearGradient id="shfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="0.35" stop-color="#cbd5e1"/><stop offset="0.6" stop-color="#94a3b8"/><stop offset="1" stop-color="#64748b"/></linearGradient>
+    <filter id="shglow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#shbg)"/>
+  <g stroke="#c0c4cc" stroke-opacity="0.06" stroke-width="1"><path d="M0 150H800M0 300H800M0 450H800M200 0V600M400 0V600M600 0V600"/></g>
+  <ellipse cx="400" cy="470" rx="250" ry="30" fill="#e2e8f0" fill-opacity="0.1" filter="url(#shglow)"/>
+
+  <path d="M170 402 C170 300 232 246 344 240 C474 233 566 274 610 334 C628 360 624 392 600 402 Z" fill="url(#shfill)" stroke="#f1f5f9" stroke-width="2" filter="url(#shglow)"/>
+  <!-- chrome reflection bands -->
+  <path d="M200 330 C300 300 480 300 590 344" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+  <path d="M215 360 C320 342 470 344 585 372" fill="none" stroke="#475569" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <path d="M240 386 C330 374 460 376 560 392" fill="none" stroke="#e2e8f0" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <g fill="#1a1f27" stroke="#94a3b8" stroke-width="1.5"><rect x="214" y="400" width="42" height="20" rx="4"/><rect x="378" y="402" width="42" height="20" rx="4"/><rect x="512" y="400" width="42" height="20" rx="4"/></g>
+  <text x="400" y="548" text-anchor="middle" font-family="'Space Grotesk',system-ui,sans-serif" font-size="22" letter-spacing="4" fill="#7c828e">SHELL · CHROME</text>
+</svg>

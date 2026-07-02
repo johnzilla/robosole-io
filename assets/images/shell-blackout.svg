@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Matte Blackout Shell — a stealth snap-on style top in matte black">
+  <defs>
+    <radialGradient id="sbbg" cx="50%" cy="42%" r="70%"><stop offset="0" stop-color="#0f1216"/><stop offset="1" stop-color="#050608"/></radialGradient>
+    <linearGradient id="sbfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b303a"/><stop offset="0.5" stop-color="#171a20"/><stop offset="1" stop-color="#0a0b0e"/></linearGradient>
+    <filter id="sbglow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#sbbg)"/>
+  <g stroke="#c0c4cc" stroke-opacity="0.05" stroke-width="1"><path d="M0 150H800M0 300H800M0 450H800M200 0V600M400 0V600M600 0V600"/></g>
+  <ellipse cx="400" cy="470" rx="250" ry="30" fill="#c0c4cc" fill-opacity="0.06"/>
+
+  <path d="M170 402 C170 300 232 246 344 240 C474 233 566 274 610 334 C628 360 624 392 600 402 Z" fill="url(#sbfill)" stroke="#3a414c" stroke-width="2"/>
+  <!-- subtle matte sheen -->
+  <path d="M235 298 C320 260 430 260 520 298" fill="none" stroke="#4a515c" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <!-- blacked-out tonal panel seams -->
+  <g stroke="#20242c" stroke-width="2.5" fill="none"><path d="M300 330 C360 316 440 316 500 336"/><path d="M280 362 C360 350 450 352 520 366"/></g>
+  <!-- tiny silver eyelet accents -->
+  <g fill="#6b7280"><circle cx="330" cy="322" r="3"/><circle cx="470" cy="322" r="3"/></g>
+  <g fill="#111318" stroke="#3a414c" stroke-width="1.5"><rect x="214" y="400" width="42" height="20" rx="4"/><rect x="378" y="402" width="42" height="20" rx="4"/><rect x="512" y="400" width="42" height="20" rx="4"/></g>
+  <text x="400" y="548" text-anchor="middle" font-family="'Space Grotesk',system-ui,sans-serif" font-size="22" letter-spacing="4" fill="#7c828e">SHELL · MATTE BLACKOUT</text>
+</svg>

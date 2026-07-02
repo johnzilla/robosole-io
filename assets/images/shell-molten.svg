@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Molten Shell — a snap-on style top in hot orange forge tones">
+  <defs>
+    <radialGradient id="smbg" cx="50%" cy="42%" r="70%"><stop offset="0" stop-color="#161009"/><stop offset="1" stop-color="#080605"/></radialGradient>
+    <linearGradient id="smfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdba74"/><stop offset="0.5" stop-color="#fb923c"/><stop offset="1" stop-color="#ea580c"/></linearGradient>
+    <filter id="smglow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#smbg)"/>
+  <g stroke="#f97316" stroke-opacity="0.07" stroke-width="1"><path d="M0 150H800M0 300H800M0 450H800M200 0V600M400 0V600M600 0V600"/></g>
+  <ellipse cx="400" cy="470" rx="250" ry="30" fill="#f97316" fill-opacity="0.18" filter="url(#smglow)"/>
+
+  <path d="M170 402 C170 300 232 246 344 240 C474 233 566 274 610 334 C628 360 624 392 600 402 Z" fill="url(#smfill)" stroke="#fed7aa" stroke-width="2" filter="url(#smglow)"/>
+  <path d="M235 300 C320 262 430 262 520 300" fill="none" stroke="#fff7ed" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <!-- molten flow veins -->
+  <g stroke="#9a3412" stroke-width="3" fill="none" opacity="0.8" stroke-linecap="round">
+    <path d="M260 350 C300 330 340 360 380 340 C420 320 470 350 520 330"/>
+    <path d="M280 375 C330 360 360 380 410 366 C450 356 490 372 540 360"/>
+  </g>
+  <!-- ember specks -->
+  <g fill="#fef3c7"><circle cx="330" cy="300" r="3"/><circle cx="450" cy="292" r="2.4"/><circle cx="500" cy="315" r="2"/><circle cx="380" cy="285" r="2.2"/></g>
+  <g fill="#3a1a0c" stroke="#ea580c" stroke-width="1.5"><rect x="214" y="400" width="42" height="20" rx="4"/><rect x="378" y="402" width="42" height="20" rx="4"/><rect x="512" y="400" width="42" height="20" rx="4"/></g>
+  <text x="400" y="548" text-anchor="middle" font-family="'Space Grotesk',system-ui,sans-serif" font-size="22" letter-spacing="4" fill="#7c828e">SHELL · MOLTEN</text>
+</svg>

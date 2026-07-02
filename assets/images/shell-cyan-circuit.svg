@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Cyan Circuit Shell — a snap-on style top in electric cyan">
+  <defs>
+    <radialGradient id="scbg" cx="50%" cy="42%" r="70%"><stop offset="0" stop-color="#0e161a"/><stop offset="1" stop-color="#060809"/></radialGradient>
+    <linearGradient id="scfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#67e8f9"/><stop offset="0.5" stop-color="#22d3ee"/><stop offset="1" stop-color="#0891b2"/></linearGradient>
+    <filter id="scglow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#scbg)"/>
+  <rect width="800" height="600" fill="none"/>
+  <g stroke="#22d3ee" stroke-opacity="0.08" stroke-width="1"><path d="M0 150H800M0 300H800M0 450H800M200 0V600M400 0V600M600 0V600"/></g>
+  <ellipse cx="400" cy="470" rx="250" ry="30" fill="#22d3ee" fill-opacity="0.18" filter="url(#scglow)"/>
+
+  <!-- SHELL dome (the snap-on style top) -->
+  <path d="M170 402 C170 300 232 246 344 240 C474 233 566 274 610 334 C628 360 624 392 600 402 Z" fill="url(#scfill)" stroke="#a5f3fc" stroke-width="2" filter="url(#scglow)"/>
+  <!-- top highlight -->
+  <path d="M235 300 C320 262 430 262 520 300" fill="none" stroke="#ecfeff" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <!-- circuit detailing -->
+  <g stroke="#0e7490" stroke-width="2.5" fill="none" opacity="0.85">
+    <path d="M250 360 h70 v-30 h60"/><path d="M330 360 v-20 h50"/>
+    <path d="M430 372 h80 v-34"/><path d="M470 372 v-24 h40 v-20"/>
+    <circle cx="320" cy="330" r="4" fill="#0e7490"/><circle cx="510" cy="338" r="4" fill="#0e7490"/><circle cx="430" cy="372" r="4" fill="#0e7490"/>
+  </g>
+  <!-- SnapLock connector tabs on the underside -->
+  <g fill="#0e3a44" stroke="#0891b2" stroke-width="1.5"><rect x="214" y="400" width="42" height="20" rx="4"/><rect x="378" y="402" width="42" height="20" rx="4"/><rect x="512" y="400" width="42" height="20" rx="4"/></g>
+  <text x="400" y="548" text-anchor="middle" font-family="'Space Grotesk',system-ui,sans-serif" font-size="22" letter-spacing="4" fill="#7c828e">SHELL · CYAN CIRCUIT</text>
+</svg>
