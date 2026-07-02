@@ -1,9 +1,14 @@
 name: robosole
 region: nyc
 domains:
-  # www serves the site; bare robosole.io is redirected to www at DreamHost.
-  - domain: www.robosole.io
+  # Apex-native (same pattern as poopix.ai): bare robosole.io serves directly
+  # via A records to DO's App Platform edge IPs (162.159.140.98 / 172.66.0.96)
+  # at DreamHost; www is an alias that DO redirects to the apex. DNS + email
+  # stay at DreamHost.
+  - domain: robosole.io
     type: PRIMARY
+  - domain: www.robosole.io
+    type: ALIAS
 static_sites:
   - name: web
     github:
