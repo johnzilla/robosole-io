@@ -34,15 +34,23 @@
       <!-- shin -->
       <path d="M1130 818 C1152 812 1170 820 1170 844 L1164 902 C1162 918 1150 926 1136 924 L1122 922 C1110 918 1106 906 1108 892 L1118 844 C1120 828 1124 822 1130 818 Z" fill="url(#panel)" stroke="#3a414c" stroke-width="2"/>
 
-      <!-- FOOT: RoboSole Tread (lugged base) + cyan Shell, with a Klasp seam -->
-      <!-- tread / sole -->
-      <path d="M1108 934 C1108 924 1120 922 1150 924 L1236 930 C1256 932 1258 946 1252 956 L1246 968 C1242 974 1230 974 1216 974 L1120 972 C1102 972 1098 962 1100 950 Z" fill="url(#tread)" stroke="#20242c" stroke-width="2"/>
-      <g fill="#101215" stroke="#2b3038" stroke-width="1.3"><rect x="1116" y="964" width="26" height="14" rx="3"/><rect x="1150" y="965" width="26" height="14" rx="3"/><rect x="1184" y="964" width="26" height="13" rx="3"/><rect x="1216" y="962" width="24" height="12" rx="3"/></g>
-      <!-- shell (cyan top) -->
-      <path d="M1120 930 C1122 902 1140 888 1170 888 C1210 887 1240 902 1246 926 C1248 936 1240 942 1226 942 L1132 940 C1120 940 1119 936 1120 930 Z" fill="url(#shell)" stroke="#a5f3fc" stroke-width="2" filter="url(#glow)"/>
-      <path d="M1150 906 C1175 896 1205 900 1228 916" fill="none" stroke="#ecfeff" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
-      <!-- Klasp seam line where shell meets tread -->
-      <path d="M1122 936 L1244 934" stroke="#0891b2" stroke-width="2.5" opacity="0.9"/>
+      <!-- FOOT: the Asimov ankle enters a RoboSole shoe — Tread boot sole
+           (rounded, upturned toe + toe-roller, lugs) + cyan Shell upper. -->
+      <!-- twin ankle actuator rods (Asimov detail) -->
+      <g stroke="#4a515c" stroke-width="5" stroke-linecap="round"><path d="M1138 856 L1142 910"/><path d="M1152 852 L1156 908"/></g>
+      <!-- tread / boot sole -->
+      <path d="M1106 940 C1104 928 1118 924 1148 926 L1214 934 C1242 936 1260 940 1264 951 C1266 960 1259 967 1246 968 L1120 974 C1104 974 1100 960 1102 950 Z" fill="url(#tread)" stroke="#20242c" stroke-width="2"/>
+      <!-- toe roller -->
+      <circle cx="1256" cy="953" r="7" fill="#0d0f13" stroke="#22d3ee" stroke-width="1.6"/>
+      <!-- outsole lugs -->
+      <g fill="#101215" stroke="#2b3038" stroke-width="1.3"><rect x="1116" y="965" width="26" height="13" rx="3"/><rect x="1150" y="966" width="26" height="13" rx="3"/><rect x="1184" y="965" width="26" height="12" rx="3"/><rect x="1216" y="962" width="22" height="11" rx="3"/></g>
+      <!-- shell (cyan upper over instep + toe) -->
+      <path d="M1126 936 C1126 906 1146 890 1180 890 C1218 890 1248 906 1260 930 C1263 938 1254 942 1242 942 L1134 942 C1124 942 1124 940 1126 936 Z" fill="url(#shell)" stroke="#a5f3fc" stroke-width="2" filter="url(#glow)"/>
+      <path d="M1150 908 C1178 898 1210 902 1236 920" fill="none" stroke="#ecfeff" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+      <!-- ankle collar where the leg enters the shoe -->
+      <ellipse cx="1150" cy="911" rx="19" ry="8" fill="#07090c" stroke="#0891b2" stroke-width="2"/>
+      <!-- Klasp seam where Shell meets Tread -->
+      <path d="M1128 938 L1250 936" stroke="#0891b2" stroke-width="2.5" opacity="0.9"/>
     </g>
   </defs>
 
