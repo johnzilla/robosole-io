@@ -67,13 +67,32 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var input = form.querySelector('input[type="email"]');
-      if (input && input.value.trim()) {
-        // TODO: POST to your email provider / API route here.
-        var wrap = document.querySelector("[data-signup-wrap]");
-        var success = document.querySelector("[data-signup-success]");
-        if (wrap) wrap.classList.add("hidden");
-        if (success) success.classList.remove("hidden");
+      if (!input || !input.value.trim()) return;
+
+      var btn = form.querySelector('button[type="submit"]');
+      var errorEl = form.querySelector("[data-signup-error]");
+      if (errorEl) errorEl.classList.add("hidden");
+      if (btn) btn.disabled = true;
+
+      function showError() {
+        if (btn) btn.disabled = false;
+        if (errorEl) errorEl.classList.remove("hidden");
       }
+
+      // Real submission to Formspree (AJAX so we keep the inline success state).
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      })
+        .then(function (res) {
+          if (!res.ok) return showError();
+          var wrap = document.querySelector("[data-signup-wrap]");
+          var success = document.querySelector("[data-signup-success]");
+          if (wrap) wrap.classList.add("hidden");
+          if (success) success.classList.remove("hidden");
+        })
+        .catch(showError);
     });
   }
 

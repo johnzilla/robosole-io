@@ -572,13 +572,18 @@
 
                 <div class="lg:pl-8">
                   <div data-signup-wrap>
-                    <form data-signup-form class="rounded-xl border border-white/10 bg-forge-950/50 p-8">
+                    <form data-signup-form action="https://formspree.io/f/xykqnqaz" method="POST" class="rounded-xl border border-white/10 bg-forge-950/50 p-8">
                       <label for="signup-email" class="text-sm font-semibold text-white">Announcement list</label>
-                      <p class="mt-1 text-sm text-silver-dim">No spam. Just drops and spec sheets.</p>
+                      <p class="mt-1 text-sm text-silver-dim">No spam. Just launch news and first looks.</p>
+                      <!-- Formspree spam honeypot (hidden from humans) + metadata -->
+                      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="hidden" />
+                      <input type="hidden" name="_subject" value="New RoboSole signup" />
+                      <input type="hidden" name="source" value="robosole.io" />
                       <div class="mt-5 flex flex-col gap-3 sm:flex-row">
-                        <input id="signup-email" type="email" required placeholder="you@yourlab.io" class="w-full rounded-md border border-white/10 bg-forge-900 px-4 py-3 text-sm text-white placeholder:text-silver-dim focus:border-cyan-glow/60 focus:outline-none focus:ring-1 focus:ring-cyan-glow/40" />
+                        <input id="signup-email" name="email" type="email" required placeholder="you@yourlab.io" class="w-full rounded-md border border-white/10 bg-forge-900 px-4 py-3 text-sm text-white placeholder:text-silver-dim focus:border-cyan-glow/60 focus:outline-none focus:ring-1 focus:ring-cyan-glow/40" />
                         <button type="submit" class="btn btn-primary shrink-0">Notify me<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
                       </div>
+                      <p data-signup-error class="mt-3 hidden text-sm text-spark-hot">Hmm, that didn't go through — give it another shot.</p>
                     </form>
                   </div>
                   <div data-signup-success class="hidden rounded-xl border border-cyan-glow/30 bg-cyan-glow/5 p-8 text-center">
@@ -586,7 +591,7 @@
                       <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
                     </div>
                     <p class="mt-4 font-display text-lg font-semibold text-white">You're on the list.</p>
-                    <p class="mt-1 text-sm text-silver">Watch your inbox — Drop 002 details land soon.</p>
+                    <p class="mt-1 text-sm text-silver">Watch your inbox — we'll be in touch as we kick things off.</p>
                   </div>
                 </div>
               </div>
