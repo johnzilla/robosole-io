@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Inside the RoboSole forge: a robotic arm handling a glowing cured tread">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d0f13"/>
+      <stop offset="1" stop-color="#060708"/>
+    </linearGradient>
+    <radialGradient id="ember" cx="50%" cy="66%" r="42%">
+      <stop offset="0" stop-color="#f97316" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#b45309" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#060708" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="farm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b3038"/>
+      <stop offset="1" stop-color="#0e1013"/>
+    </linearGradient>
+    <linearGradient id="fcyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+    <filter id="fglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#fbg)"/>
+  <!-- grid walls -->
+  <g stroke="#22d3ee" stroke-opacity="0.08" stroke-width="1">
+    <path d="M0 120 H800 M0 260 H800 M0 400 H800"/>
+    <path d="M160 0 V420 M400 0 V420 M640 0 V420"/>
+  </g>
+  <rect width="800" height="1000" fill="url(#ember)"/>
+
+  <!-- CAD hologram -->
+  <g opacity="0.6" filter="url(#fglow)" stroke="url(#fcyan)" stroke-width="2" fill="none">
+    <ellipse cx="200" cy="230" rx="120" ry="34"/>
+    <path d="M110 230 Q200 180 290 230 M110 230 Q200 280 290 230"/>
+    <path d="M150 210 L250 210 M140 250 L260 250"/>
+  </g>
+
+  <!-- robotic arm -->
+  <g stroke="#3a414c" stroke-width="3" fill="url(#farm)">
+    <rect x="600" y="60" width="70" height="70" rx="10"/>
+    <path d="M635 130 L560 360 L610 372 L680 150 Z"/>
+    <circle cx="585" cy="360" r="26"/>
+    <path d="M560 380 L470 560 L516 578 L600 392 Z"/>
+    <!-- gripper -->
+    <path d="M470 560 l-26 34 M516 578 l26 30" stroke-linecap="round"/>
+  </g>
+  <circle cx="585" cy="360" r="10" fill="url(#fcyan)"/>
+
+  <!-- glowing cured tread on bench -->
+  <g filter="url(#fglow)">
+    <path d="M300 620 L560 606 Q590 606 588 632 L580 660 Q576 672 552 672 L322 684 Q294 684 292 654 Z" fill="#1a1210" stroke="#f97316" stroke-width="3"/>
+    <path d="M312 656 L578 644" stroke="#fb923c" stroke-width="5"/>
+    <g fill="#2a1a12" stroke="#f97316" stroke-width="1.6" opacity="0.9">
+      <rect x="316" y="660" width="40" height="24" rx="5"/>
+      <rect x="368" y="660" width="40" height="24" rx="5"/>
+      <rect x="420" y="658" width="40" height="24" rx="5"/>
+      <rect x="472" y="656" width="40" height="22" rx="5"/>
+      <rect x="524" y="652" width="38" height="20" rx="5"/>
+    </g>
+  </g>
+
+  <!-- inspection bench -->
+  <rect x="240" y="700" width="380" height="18" rx="4" fill="#14171c" stroke="#262b33" stroke-width="2"/>
+  <rect x="270" y="718" width="18" height="120" fill="#101216"/>
+  <rect x="572" y="718" width="18" height="120" fill="#101216"/>
+
+  <!-- rising sparks -->
+  <g fill="#fb923c">
+    <circle cx="420" cy="600" r="3"/>
+    <circle cx="450" cy="560" r="2.2" fill-opacity="0.8"/>
+    <circle cx="400" cy="540" r="2.6" fill-opacity="0.7"/>
+    <circle cx="470" cy="600" r="2" fill-opacity="0.6"/>
+    <circle cx="380" cy="580" r="1.8" fill-opacity="0.7"/>
+  </g>
+
+  <rect width="800" height="1000" fill="url(#fbg)" opacity="0.12"/>
+</svg>

@@ -1,0 +1,11 @@
+# OS / editor cruft
+.DS_Store
+.vscode/
+.idea/
+*.pem
+
+# The Tailwind standalone binary is the only build dependency and is ~46 MB.
+# It is NOT committed — run `tools/fetch-tailwind.sh` to fetch the pinned version.
+# The built CSS (assets/css/output.css) IS committed, so the site runs on clone
+# with no build step; you only need the binary to rebuild the CSS.
+/tools/tailwindcss

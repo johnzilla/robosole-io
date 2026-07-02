@@ -1,0 +1,20 @@
+name: robosole
+region: nyc
+static_sites:
+  - name: web
+    github:
+      repo: johnzilla/robosole-io
+      branch: main
+      deploy_on_push: true
+    # Pre-built static site: no build step. index.html + assets live at the root.
+    source_dir: /
+    output_dir: /
+    index_document: index.html
+    catchall_document: index.html
+ingress:
+  rules:
+    - component:
+        name: web
+      match:
+        path:
+          prefix: /

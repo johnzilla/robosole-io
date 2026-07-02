@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Performance Kicks lightweight robot shoe render">
+  <defs>
+    <radialGradient id="p3bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#0e161a"/>
+      <stop offset="1" stop-color="#060809"/>
+    </radialGradient>
+    <linearGradient id="p3body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232a33"/>
+      <stop offset="1" stop-color="#0e1013"/>
+    </linearGradient>
+    <linearGradient id="p3cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+    <filter id="p3glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#p3bg)"/>
+  <ellipse cx="400" cy="470" rx="280" ry="32" fill="#22d3ee" fill-opacity="0.16" filter="url(#p3glow)"/>
+
+  <!-- aerodynamic upper -->
+  <path d="M170 348 Q230 250 360 246 Q500 244 590 320 Q624 350 618 388 L618 400 L170 400 Q158 372 170 348 Z" fill="url(#p3body)" stroke="#3a414c" stroke-width="2"/>
+  <!-- speed lines -->
+  <g stroke="url(#p3cyan)" stroke-width="3" fill="none" opacity="0.9" filter="url(#p3glow)">
+    <path d="M230 330 Q360 300 560 340"/>
+    <path d="M230 356 Q360 330 580 366"/>
+  </g>
+  <!-- dynamic collar -->
+  <path d="M520 250 Q596 264 604 330" fill="none" stroke="#c0c4cc" stroke-width="3" opacity="0.6"/>
+
+  <!-- energy-return sole -->
+  <path d="M160 400 L622 394 Q650 394 648 420 L642 440 Q638 450 618 450 L182 458 Q156 458 154 432 Z" fill="#0c0e12" stroke="#20242c" stroke-width="2"/>
+  <!-- glowing sole core -->
+  <path d="M170 424 L634 418" stroke="url(#p3cyan)" stroke-width="6" filter="url(#p3glow)"/>
+
+  <!-- exposed spring-return heel -->
+  <g stroke="url(#p3cyan)" stroke-width="4" fill="none" opacity="0.95" filter="url(#p3glow)">
+    <path d="M566 452 q14 -12 28 0 q-14 12 0 24 q-14 12 0 24"/>
+  </g>
+  <!-- forefoot lugs -->
+  <g fill="#14171c" stroke="#262b33" stroke-width="1.4">
+    <rect x="176" y="444" width="44" height="20" rx="6"/>
+    <rect x="234" y="444" width="44" height="20" rx="6"/>
+    <rect x="292" y="443" width="44" height="20" rx="6"/>
+    <rect x="350" y="442" width="44" height="20" rx="6"/>
+  </g>
+  <text x="400" y="545" text-anchor="middle" font-family="'Space Grotesk',system-ui,sans-serif" font-size="22" letter-spacing="5" fill="#7c828e">PERFORMANCE KICKS</text>
+</svg>

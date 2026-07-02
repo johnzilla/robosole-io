@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://robosole.io/sitemap.xml
+Host: https://robosole.io

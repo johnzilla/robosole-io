@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------ */
+/*  Self-hosted fonts (no runtime request to Google)                   */
+/* ------------------------------------------------------------------ */
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/space-grotesk-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/space-grotesk-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/space-grotesk-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/inter-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/inter-700.woff2") format("woff2");
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-forge-900 font-sans text-silver antialiased;
+    background-image: radial-gradient(
+        ellipse 80% 50% at 50% -10%,
+        rgba(34, 211, 238, 0.08),
+        transparent
+      ),
+      radial-gradient(
+        ellipse 60% 50% at 90% 20%,
+        rgba(249, 115, 22, 0.05),
+        transparent
+      );
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-cyan-glow/30 text-white;
+  }
+}
+
+@layer components {
+  .container-edge {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-glow;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold uppercase tracking-wider transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-glow focus-visible:ring-offset-2 focus-visible:ring-offset-forge-900;
+  }
+
+  .btn-primary {
+    @apply bg-cyan-glow text-forge-950 shadow-glow-sm hover:bg-cyan-bright hover:shadow-glow hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply border border-silver/25 bg-white/5 text-silver hover:border-cyan-glow/60 hover:text-white hover:bg-white/[0.08];
+  }
+
+  .card-surface {
+    @apply relative overflow-hidden rounded-xl border border-white/10 bg-forge-800/60 backdrop-blur-sm;
+  }
+
+  .rule-glow {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-cyan-glow/40 to-transparent;
+  }
+}
+
+@layer utilities {
+  .text-gradient-cyber {
+    @apply bg-gradient-to-br from-white via-silver to-cyan-glow bg-clip-text text-transparent;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Interactive state — toggled by assets/js/main.js.                  */
+/*  Kept as plain CSS (not utilities) so the purge never drops them.   */
+/* ------------------------------------------------------------------ */
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Sticky nav scrolled state */
+.site-header {
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  transition: background 0.3s ease, border-color 0.3s ease,
+    backdrop-filter 0.3s ease;
+}
+.site-header.is-scrolled {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  background: rgba(5, 6, 8, 0.8);
+  backdrop-filter: blur(12px);
+}
+
+/* Mobile menu */
+.mobile-drawer {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.mobile-drawer.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.nav-toggle .bar {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.nav-toggle.is-open .bar-1 {
+  transform: translateY(6px) rotate(45deg);
+}
+.nav-toggle.is-open .bar-2 {
+  opacity: 0;
+}
+.nav-toggle.is-open .bar-3 {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}

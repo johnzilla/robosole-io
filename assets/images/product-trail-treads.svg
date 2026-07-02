@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Trail Treads all-terrain robot tread render">
+  <defs>
+    <radialGradient id="t2bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#14120f"/>
+      <stop offset="1" stop-color="#070606"/>
+    </radialGradient>
+    <linearGradient id="t2body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a3f47"/>
+      <stop offset="1" stop-color="#14161a"/>
+    </linearGradient>
+    <linearGradient id="t2sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1c20"/>
+      <stop offset="1" stop-color="#090a0c"/>
+    </linearGradient>
+    <linearGradient id="t2spark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="t2glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#t2bg)"/>
+  <ellipse cx="400" cy="480" rx="280" ry="34" fill="#f97316" fill-opacity="0.10" filter="url(#t2glow)"/>
+
+  <!-- upper: rugged shell -->
+  <path d="M180 350 Q200 240 320 232 Q470 226 566 296 Q618 336 616 384 L616 398 L180 398 Z" fill="url(#t2body)" stroke="#4a515c" stroke-width="2"/>
+  <!-- armor plates -->
+  <g fill="#20242c" stroke="#4a515c" stroke-width="1.5">
+    <path d="M230 300 L300 288 L308 350 L236 356 Z"/>
+    <path d="M320 286 L400 282 L406 348 L326 350 Z"/>
+    <path d="M420 286 L500 300 L500 350 L424 348 Z"/>
+  </g>
+  <!-- torsion plate accent -->
+  <path d="M200 384 L610 380" stroke="url(#t2spark)" stroke-width="5" filter="url(#t2glow)"/>
+  <path d="M540 250 Q600 262 606 322" fill="none" stroke="#c0c4cc" stroke-width="3" opacity="0.7"/>
+
+  <!-- midsole -->
+  <path d="M168 398 L620 392 Q648 392 646 418 L640 446 Q636 456 616 456 L188 464 Q162 464 160 436 Z" fill="url(#t2sole)" stroke="#262b33" stroke-width="2"/>
+  <!-- DEEP aggressive lugs -->
+  <g fill="#101215" stroke="#31373f" stroke-width="1.6">
+    <path d="M185 452 l30 -6 l10 40 l-34 4 Z"/>
+    <path d="M240 449 l34 -5 l10 42 l-38 4 Z"/>
+    <path d="M300 447 l34 -4 l10 44 l-38 3 Z"/>
+    <path d="M360 446 l34 -3 l10 44 l-38 3 Z"/>
+    <path d="M420 446 l34 -1 l8 44 l-38 2 Z"/>
+    <path d="M480 447 l34 1 l6 42 l-38 1 Z"/>
+    <path d="M540 448 l30 2 l4 38 l-32 1 Z"/>
+    <path d="M594 448 l26 2 l2 32 l-28 1 Z"/>
+  </g>
+  <text x="400" y="548" text-anchor="middle" font-family="'Space Grotesk',system-ui,sans-serif" font-size="22" letter-spacing="6" fill="#7c828e">TRAIL TREADS</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Sole Series 01 robot shoe render">
+  <defs>
+    <radialGradient id="s1bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#12161c"/>
+      <stop offset="1" stop-color="#070809"/>
+    </radialGradient>
+    <linearGradient id="s1body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2f38"/>
+      <stop offset="1" stop-color="#111318"/>
+    </linearGradient>
+    <linearGradient id="s1sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#181b21"/>
+      <stop offset="1" stop-color="#0a0b0e"/>
+    </linearGradient>
+    <linearGradient id="s1cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+    <filter id="s1glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#s1bg)"/>
+  <ellipse cx="400" cy="470" rx="270" ry="34" fill="#22d3ee" fill-opacity="0.12" filter="url(#s1glow)"/>
+
+  <!-- upper -->
+  <path d="M180 360 Q210 250 330 240 Q470 232 560 300 Q612 340 612 388 L612 402 L180 402 Z" fill="url(#s1body)" stroke="#3a414c" stroke-width="2"/>
+  <!-- carbon weave hint -->
+  <g stroke="#3a414c" stroke-width="1" opacity="0.5">
+    <path d="M250 300 L300 330 M300 300 L350 330 M350 300 L400 330 M400 300 L450 330 M450 305 L500 335"/>
+    <path d="M300 330 L250 360 M350 330 L300 360 M400 330 L350 360 M450 330 L400 360 M500 335 L450 360"/>
+  </g>
+  <!-- collar -->
+  <path d="M540 260 Q600 270 606 330" fill="none" stroke="url(#s1cyan)" stroke-width="4" opacity="0.85" filter="url(#s1glow)"/>
+  <!-- accent stripe -->
+  <path d="M198 388 L604 384" stroke="url(#s1cyan)" stroke-width="4" filter="url(#s1glow)"/>
+
+  <!-- midsole -->
+  <path d="M172 402 L616 396 Q642 396 640 420 L634 442 Q630 452 612 452 L192 458 Q168 458 166 434 Z" fill="url(#s1sole)" stroke="#20242c" stroke-width="2"/>
+  <!-- outsole lugs -->
+  <g fill="#14171c" stroke="#262b33" stroke-width="1.4">
+    <rect x="190" y="446" width="52" height="26" rx="6"/>
+    <rect x="256" y="447" width="52" height="27" rx="6"/>
+    <rect x="322" y="448" width="52" height="28" rx="6"/>
+    <rect x="388" y="447" width="52" height="27" rx="6"/>
+    <rect x="454" y="446" width="52" height="26" rx="6"/>
+    <rect x="520" y="444" width="48" height="24" rx="6"/>
+    <rect x="580" y="440" width="40" height="20" rx="6"/>
+  </g>
+  <!-- brand tab -->
+  <circle cx="250" cy="330" r="12" fill="none" stroke="url(#s1cyan)" stroke-width="3"/>
+  <text x="400" y="545" text-anchor="middle" font-family="'Space Grotesk',system-ui,sans-serif" font-size="22" letter-spacing="6" fill="#7c828e">SOLE SERIES 01</text>
+</svg>
