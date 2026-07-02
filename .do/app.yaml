@@ -1,5 +1,9 @@
 name: robosole
 region: nyc
+domains:
+  # www serves the site; bare robosole.io is redirected to www at DreamHost.
+  - domain: www.robosole.io
+    type: PRIMARY
 static_sites:
   - name: web
     github:
