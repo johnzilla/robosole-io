@@ -123,8 +123,8 @@ and `index.html`:
   email provider (Klaviyo, Resend, Mailchimp) or a serverless function.
 - **Product buttons** — the `Pre-order` / `Buy` buttons anchor to `#community`.
   Swap the `href` for real checkout URLs (Shopify, Stripe, etc.).
-- **Discord / social links** — update the URLs in `index.html`
-  (currently `discord.gg/robosole`, `x.com/robosole`, `github.com/robosole`).
+- **Social links** — update the URLs in `index.html`
+  (currently `x.com/robosole`, `github.com/robosole`).
 
 ---
 
